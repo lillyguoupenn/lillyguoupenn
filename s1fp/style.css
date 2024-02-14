@@ -1,36 +1,59 @@
 #maintext {
     text-align: center;
-    line-height: 500px;
+    line-height: 300px;
     /* margin-top: 100px; */
     font-family: "Gloria Hallelujah", sans-serif;
 }
 
 #characters {
     width: 100%;
-    height: 100%;
+    height: 100vw;
+    margin: 0 auto;
+    /* max-height: 1000px;
+    max-width: 2000px */
 }
 
 #bojack {
-    width: 30%;
-    height: 50%;
     background-image: url("bojack.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #bojack:hover {
     background-image: url("bojack-hover.png");
+    font-size: 20px;
 }
 
-/* #diane {
-    width: 50%;
-    height: 50%;
-    background-image: url("bojack.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
+#diane {
+    background-image: url("diane.webp");
+}
+
+#diane:hover {
+    background-image: url("diane-hover.webp");
+    font-size: 20px;
+}
+
+
+#princess-carolyn {
+    background-image: url("carolyn.webp");
+}
+
+#princess-carolyn:hover {
+    background-image: url("carolyn-hover.png");
+    /* text-shadow: 0 0 12px #969494; */
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30vw;
+    /* margin-top:  */
+    font-family: "Gloria Hallelujah", sans-serif;
+    color: black;
+}
+
 
 .flex-container {
     display:flex;
@@ -38,8 +61,20 @@
     justify-content: space-around;
 }
 
-.flex-container a {
+.character{
+    width: 30%;
+    height: 50vw;
+    /* max-width: 400px; */
+    max-height: 700px;
+    background-image: url("diane.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* flex-shrink: 1; */
+}
+
+/* .flex-container a {
     display: block;
     width: 30%;
     height: 50%;
-}
+} */
