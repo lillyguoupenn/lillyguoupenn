@@ -43,15 +43,22 @@
 }
 
 a {
+    position: relative;
+    display: flex;
     text-decoration: none;
 }
 
 h2 {
+    position: absolute;
+    bottom: -7vw;
+    left: 0;
     text-align: center;
-    margin-top: 30vw;
+    width: 100%;
+    /* margin-top: 30vw; */
     /* margin-top:  */
     font-family: "Gloria Hallelujah", sans-serif;
     color: black;
+    /* font-size: 3vw; */
 }
 
 
