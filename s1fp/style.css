@@ -47,12 +47,23 @@ h2 {
     font-size: 20px;
 }
 
+#diane:active {
+    background-image: url("diane-hover.webp");
+    font-size: 20px;
+}
+
 
 #princess-carolyn {
     background-image: url("carolyn.webp");
 }
 
 #princess-carolyn:hover {
+    background-image: url("carolyn-hover.png");
+    /* text-shadow: 0 0 12px #969494; */
+    font-size: 20px;
+}
+
+#princess-carolyn:active {
     background-image: url("carolyn-hover.png");
     /* text-shadow: 0 0 12px #969494; */
     font-size: 20px;
@@ -117,6 +128,10 @@ span{
 }
 
 #homepage-button:hover {
+    font-size:20px;
+}
+
+#homepage-button:active {
     font-size:20px;
 }
 
@@ -352,6 +367,11 @@ font-size:2em;
     transition: opacity .55s ease-in-out;
 }
 
+#quote2:active {
+    opacity:1;
+    transition: opacity .55s ease-in-out;
+}
+
 #quote3{
     position:absolute;
     height:400px;
@@ -363,6 +383,11 @@ font-size:2em;
 }
 
 #quote3:hover {
+    opacity:1;
+    transition: opacity .55s ease-in-out;
+}
+
+#quote3:active {
     opacity:1;
     transition: opacity .55s ease-in-out;
 }
