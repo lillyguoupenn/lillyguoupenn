@@ -73,16 +73,11 @@ td{
 #ziggy {
     display:flex;
     position: relative;
-    /* width: 50%; */
     align-items:center;
     justify-content: center;
     scale: 90%;
 }
 
-.clothes {
-    position: absolute;
-    display: none;
-}
 
 #p_jeans{
     z-index: 20;
@@ -119,8 +114,13 @@ td{
 
 .img-container {
     display:flex;
-    height:100%;
+    height:auto;
     width:100%;
+}
+
+.clothes {
+    position: absolute;
+    display: none;
 }
 
 ::selection {
