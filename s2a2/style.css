@@ -1,70 +1,110 @@
 #main_page{
     margin: 10px 10px 10px;
-    justify-content: center;
+    justify-content: start;
+    font-family: "Shantell Sans", cursive;
 }
 
 #get_dressed {
     display: flex;
     position: relative;
-    width: 50%;
     justify-content: start;
     /* background-color: aqua; */
-    font-family: "Shantell Sans", cursive;
-    flex-flow:column;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    /* flex-flow:column; */
 }
 
 h1{
-    font-size: 3vw;
+    font-size: 10vw;
     text-align:center;
     line-height: 10vw;
-    padding-top: 5vw;
+    /* background-color: aqua; */
+
 }
 
-#shirt{
-    padding-left: 4vw;
-    
+td{
+    padding-top: 2vw;
+    padding-left: 2vw;
+    font-size: 1.8vw;
+    text-align:left;
+    line-height: 4vw;
+    justify-content: start;
+    font-family: "Shantell Sans", cursive;
 }
 
-#pants, #accessories {
-    display: none;
-  }
-
-#shirtoption1:checked ~ #pants {
-    display: block;
-  }
-
-
-#shirtoption2:checked ~ #pants {
-    display: block;
-  }
-#shirtoption2:checked ~ #ziggy_blue {
+#shirtoption1:checked ~ #ziggy > #ziggy_green {
     display: block;
     position: absolute;
   }
 
-#shirtoption3:checked ~ #pants {
+
+#shirtoption2:checked ~ #ziggy > #ziggy_blue {
     display: block;
+    position: absolute;
   }
 
-#pantsoption1:checked ~ #accessories {
+
+#shirtoption3:checked ~ #ziggy > #ziggy_red {
     display: block;
+    position: absolute;
+  }
+
+
+#pantsoption1:checked ~ #ziggy > #p_jeans {
+    display: block;
+    position: absolute;
+  }
+
+#pantsoption2:checked ~ #ziggy > #p_shorts {
+    display: block;
+    position: absolute;
+  }
+
+#pantsoption3:checked ~ #ziggy > #p_skirt {
+    display: block;
+    position: absolute;
   }
 
 #ziggy {
     display:flex;
     position: relative;
-    width: 50%;
+    /* width: 50%; */
     align-items:center;
     justify-content: center;
-    background-color: red;
+    scale: 90%;
 }
 
-#ziggy_blue{
+.clothes {
     position: absolute;
-    /* display: none; */
+    display: none;
+}
+
+#p_jeans{
     z-index: 20;
-    left: 80%;
-    max-width: 50%;
+    position:absolute;
+    scale: 85%;
+    top: 58%;
+    height: 40%;
+    width: 100%;
+}
+
+#p_shorts{
+    z-index: 20;
+    position:absolute;
+    scale: 85%;
+    top: 56%;
+    height: 35%;
+    width: 100%;
+}
+
+#p_skirt{
+    z-index: 20;
+    position:absolute;
+    scale: 85%;
+    top: 60%;
+    height: 30%;
+    width: 115%;
 }
 
 .flex-container {
@@ -76,11 +116,8 @@ h1{
 .img-container {
     height:100%;
     width:100%;
-    object-fit: contain;
 }
 
-.clothing {
-    font-size: 1.5vw;
-    text-align:left;
-    line-height: 7vw;
-}
+::selection {
+    background: yellow;
+  }
