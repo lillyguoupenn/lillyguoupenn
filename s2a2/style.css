@@ -1,0 +1,86 @@
+#main_page{
+    margin: 10px 10px 10px;
+    justify-content: center;
+}
+
+#get_dressed {
+    display: flex;
+    position: relative;
+    width: 50%;
+    justify-content: start;
+    /* background-color: aqua; */
+    font-family: "Shantell Sans", cursive;
+    flex-flow:column;
+}
+
+h1{
+    font-size: 3vw;
+    text-align:center;
+    line-height: 10vw;
+    padding-top: 5vw;
+}
+
+#shirt{
+    padding-left: 4vw;
+    
+}
+
+#pants, #accessories {
+    display: none;
+  }
+
+#shirtoption1:checked ~ #pants {
+    display: block;
+  }
+
+
+#shirtoption2:checked ~ #pants {
+    display: block;
+  }
+#shirtoption2:checked ~ #ziggy_blue {
+    display: block;
+    position: absolute;
+  }
+
+#shirtoption3:checked ~ #pants {
+    display: block;
+  }
+
+#pantsoption1:checked ~ #accessories {
+    display: block;
+  }
+
+#ziggy {
+    display:flex;
+    position: relative;
+    width: 50%;
+    align-items:center;
+    justify-content: center;
+    background-color: red;
+}
+
+#ziggy_blue{
+    position: absolute;
+    /* display: none; */
+    z-index: 20;
+    left: 80%;
+    max-width: 50%;
+}
+
+.flex-container {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.img-container {
+    height:100%;
+    width:100%;
+    object-fit: contain;
+}
+
+.clothing {
+    font-size: 1.5vw;
+    text-align:left;
+    line-height: 7vw;
+}
