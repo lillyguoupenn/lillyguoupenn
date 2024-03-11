@@ -1,3 +1,5 @@
+
+
 #main_page{
     margin: 10px 10px 10px;
     justify-content: start;
@@ -23,6 +25,10 @@ h1{
 
 }
 
+th{
+    width:45%;
+}
+
 td{
     padding-top: 2vw;
     padding-left: 2vw;
@@ -31,6 +37,7 @@ td{
     line-height: 4vw;
     justify-content: start;
     font-family: "Shantell Sans", cursive;
+    width:55%;
 }
 
 #shirtoption1:checked ~ #ziggy > #ziggy_green {
@@ -121,4 +128,23 @@ td{
 
 ::selection {
     background: yellow;
+  }
+
+tbody>:nth-child(2){
+    display:none;
+   }
+
+@media only screen and (max-width: 600px) {
+    th {
+        width:100%;
+        line-height: 3vh;
+    }
+
+    tbody>tr>:nth-child(2) {
+        display:none;
+    }
+
+    tbody>:nth-child(2) {
+        display:block;
+    }
   }
