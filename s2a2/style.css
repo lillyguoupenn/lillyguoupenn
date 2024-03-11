@@ -138,6 +138,7 @@ tbody>:nth-child(2){
     th {
         width:100%;
         line-height: 3vh;
+        font-weight: 5;
     }
 
     tbody>tr>:nth-child(2) {
