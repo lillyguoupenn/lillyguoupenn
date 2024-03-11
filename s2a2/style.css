@@ -118,6 +118,12 @@ td{
     width:100%;
 }
 
+.pants-img{
+    display:flex;
+    height:100%;
+    width:100%;
+}
+
 .clothes {
     position: absolute;
     display: none;
