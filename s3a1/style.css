@@ -1,0 +1,33 @@
+
+#main_page{
+    margin: 10px 10px 10px;
+    justify-content: center;
+    font-family: "Supermercado One", sans-serif;
+    color: #292929;
+}
+
+h1{
+    text-align: center;
+    font-family: "Supermercado One", sans-serif;
+    font-size: 8vw;
+    line-height: 20vw;
+    text-shadow: 3px 2px #a55cc2;
+    color:#3c053c;
+    /* background: linear-gradient(to right,#fb10d4, #49165d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    
+}
+
+#contents{
+    text-align: center;
+    font-family: "Supermercado One", sans-serif;
+    font-size: 4vw;
+    line-height: 18vw;
+}
+
+.flex-container {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
