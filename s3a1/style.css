@@ -9,14 +9,11 @@
 h1{
     text-align: center;
     font-family: "Supermercado One", sans-serif;
-    font-size: 8vw;
-    line-height: 20vw;
-    text-shadow: 3px 2px #a55cc2;
-    color:#3c053c;
-    /* background: linear-gradient(to right,#fb10d4, #49165d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    
+    font-size: 7vw;
+    line-height: 5vw;
+    padding-top: 7vw;
+    text-shadow: 3px 3px #e7d50b;
+    color:#620a62;
 }
 
 #contents{
@@ -26,8 +23,62 @@ h1{
     line-height: 18vw;
 }
 
+#header{
+    text-align: center;
+    color: rgb(120, 113, 113);
+    font-size: 1vw;
+}
+
+#instruction{
+    position: relative;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: auto;
+    line-height: 4vw;
+}
+
+#leaderboard{
+    padding-top: 8vw;
+    padding-bottom: 15vw;
+    margin: auto;
+    text-align: center;
+    font-size: 3vw;
+    text-shadow: 2px 2px #e7d50b;
+    color:#620a62;
+}
+
+iframe {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #777;
+    display: block;
+}
+
 .flex-container {
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    padding: 1vw;
+    margin: auto;
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+
+    /* background: #fff;
+    border: 0.35vw solid #620a62;
+    color: #620a62;
+    text-align: center; */
+
+    background: #620a62;
+    border: 0.35vw solid #620a62;
+    color: #e7d50b;
+    text-align: center;
+    box-shadow: 5px 5px;
+
+    font-size: 3vw;
 }
