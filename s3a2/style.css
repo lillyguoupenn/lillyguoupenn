@@ -1,12 +1,38 @@
-
-#main_page{
+body{
     margin: 10px 10px 10px;
     text-align: center;
-    font-family: "Supermercado One", sans-serif;
+    font-family: "Figtree", sans-serif;
     color: #292929;
+    background-image: linear-gradient(to bottom right,#B7FFB9, #567BC2);
 }
 
 h1{
-    line-height: 20vw;
+    line-height: 20vh;
     font-size: 8vw;
+    font-weight: 600;
+    color: #254789;
+}
+
+h2{
+    font-size: 5vw;
+    font-weight: 400;
+    color: #254789;
+    margin-bottom: 100px;
+}
+
+#prompt-container{
+    width: 80vw;
+    height: 25vh;
+    background-color: white;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prompt{
+    font-size: 4vw;
+    color: #254789;
+    margin: 20px;
 }
