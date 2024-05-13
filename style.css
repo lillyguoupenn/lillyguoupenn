@@ -1,7 +1,17 @@
 body {
-    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    font-family: "Gluten", cursive;
+    background-color: #ace0f9;
+    font-family: "Nanum Pen Script", cursive;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
 }
+
+.rain-active {
+    background-color: #d6e5eb;
+}
+
+.rain-active .raindrop {
+    animation-play-state: running;
+  }
 
 #grass {
     position: absolute;
@@ -13,12 +23,179 @@ body {
     background-color: #bbb;
     border-radius: 0%;
     background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+    z-index: -100;
 }
 
 h1 {
     text-align: center;
-    padding: 10%;
-    font-size: 3vw;
-    text-shadow: 1px 1px 14px #acc6f9;
+    padding: 5%;
+    font-size: 4vw;
+    text-shadow: 1px 1px 5px #f8ec9f;
     color: white;
+    top: 0%;
 }
+
+.rain-title {
+    text-shadow: 1px 1px 5px rgb(124, 181, 187);
+}
+
+#sections-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 48%;
+    left: 0%;
+    gap: 15%;
+    justify-content: center;
+    align-items: end;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: absolute; */
+    /* top: 73%; */
+    /* left: 5%; */
+    width: 15%;
+}
+
+
+.section-label {
+    text-align: center;
+    margin-top: 12%;
+    font-size: 2.2vw;
+    color: white;
+    opacity: 0;
+}
+
+.section-plants {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.seed {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.seed img {
+    width: 50%;
+    /* margin: 10px; */
+    filter: 
+    drop-shadow(0 0 3px white)  
+    drop-shadow(3px 0 3px white)
+    drop-shadow(0 3px 3px white)
+    drop-shadow(-3px 0 3px white);
+}
+
+.seed:hover img {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+.seedling {
+    display: flex;
+    /* overflow: hidden; */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.seedling img {
+    width: 100%;
+    /* margin: 10px; */
+    filter: 
+    drop-shadow(0 0 3px white)  /* Top outline */
+    drop-shadow(3px 0 3px white) /* Right outline */
+    drop-shadow(0 3px 3px white) /* Bottom outline */
+    drop-shadow(-3px 0 3px white); /* Left outline */
+}
+
+.seedling:hover img {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+.flower {
+    display: flex;
+    /* overflow: hidden; */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.flower img {
+    width: 100%;
+    /* margin: 10px; */
+    filter: 
+    drop-shadow(0 0 3px white)  /* Top outline */
+    drop-shadow(3px 0 3px white) /* Right outline */
+    drop-shadow(0 3px 3px white) /* Bottom outline */
+    drop-shadow(-3px 0 3px white); /* Left outline */
+}
+
+.flower:hover img {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+#cloud-container {
+    position: absolute;
+    width: 8%;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8%;
+}
+
+#cloud-container img{
+    width: 100%;
+    margin: 20%;
+    cursor: pointer;
+    filter: 
+    drop-shadow(0 0 3px white)  
+    drop-shadow(3px 0 3px white)
+    drop-shadow(0 3px 3px white)
+    drop-shadow(-3px 0 3px white);
+    
+}
+
+#cloud-container:hover img{
+    transform: scale(1.2);
+}
+
+#rain-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    z-index: -100;
+}
+  
+.raindrop {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    animation: fall 4s linear infinite; 
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: rgb(124, 181, 187);
+}
+  
+@keyframes fall {
+    0% {
+      top: -20px; /* Start raindrops just above the screen */
+      opacity: 1;
+    }
+    100% {
+      top: 100vh; /* End raindrops at the bottom of the screen */
+      opacity: 0;
+    }
+  }
